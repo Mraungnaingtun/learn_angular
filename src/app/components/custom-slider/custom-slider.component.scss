@@ -1,0 +1,32 @@
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .slider {
+    appearance: none; /* Remove default styling */
+    height: 5px; 
+    border-radius: 5px;
+    background: #ddd; /* Track color */
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Customize thumb */
+    appearance: none;
+    width: 15px; 
+    height: 15px;
+    border-radius: 50%;
+    background: #007bff; /* Thumb color */
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #007bff; /* Thumb color */
+    cursor: pointer;
+  }
+  

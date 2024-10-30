@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { FirstComponent } from '../first/first.component';
 
 @Component({
   selector: 'app-second',
   standalone: true,
-  imports: [],
+  imports: [SecondComponent,FirstComponent],
   templateUrl: './second.component.html',
-  styleUrl: './second.component.scss'
+  styleUrl: './second.component.scss',
+   encapsulation: ViewEncapsulation.ShadowDom
 })
 export class SecondComponent {
 
