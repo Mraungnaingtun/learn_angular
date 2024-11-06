@@ -1,0 +1,15 @@
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  button {
+    padding: 4px 8px;
+    color: #fff;
+    background-color: #f44336;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }

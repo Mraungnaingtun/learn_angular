@@ -1,9 +1,13 @@
 <main class="main">
-  <app-header></app-header> <!-- Header component for reusability -->
+  <app-header></app-header>
 
   <section class="content-wrapper">
-    <router-outlet></router-outlet> <!-- Dynamic content will load here -->
-  </section>
+    <!-- Left Navigation Sidebar -->
+    <div class="left-navigation">
+      <app-navigation></app-navigation>
+    </div>
 
-  <app-footer></app-footer> <!-- Footer component for reusability -->
+    <!-- Main Content Area -->
+    <router-outlet></router-outlet>
+  </section>
 </main>

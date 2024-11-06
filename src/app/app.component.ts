@@ -1,17 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { SecondComponent } from "./components/second/second.component";
-import { FirstComponent } from "./components/first/first.component";
-import { ThirdComponent } from "./components/third/third.component";
-import { ProfilePhotoComponent } from "./components/profile-photo/profile-photo.component";
+import { HomeComponent } from './components/selector/home/home.component';
+import { ProfilePhotoComponent } from "./components/selector/profile-photo/profile-photo.component";
 import { HeaderComponent } from "./components/header/header.component";
-import { FooterComponent } from "./components/footer/footer.component";
+import { NavigationComponent } from "./components/navigation/navigation.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, SecondComponent, FirstComponent, ThirdComponent, ProfilePhotoComponent, HeaderComponent, FooterComponent],
+  imports: [RouterOutlet, HomeComponent, ProfilePhotoComponent, HeaderComponent, NavigationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
